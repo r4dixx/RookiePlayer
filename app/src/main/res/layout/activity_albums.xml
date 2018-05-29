@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/albums_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
@@ -9,13 +9,13 @@
     tools:context="com.r4dixx.rookieplayer.AlbumsActivity">
 
     <FrameLayout
-        android:id="@+id/content"
+        android:id="@+id/albums_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
         <TextView
-            android:id="@+id/message"
+            android:id="@+id/albums_title"
             style="@style/TitleTheme"
             android:text="@string/title_albums" />
 
