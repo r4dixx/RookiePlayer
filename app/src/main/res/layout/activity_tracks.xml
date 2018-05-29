@@ -9,6 +9,7 @@
     tools:context="com.r4dixx.rookieplayer.TracksActivity">
 
     <RelativeLayout
+        android:layout_margin="@dimen/activity_margins"
         android:id="@+id/tracks_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -20,14 +21,13 @@
             style="@style/TitleTheme"
             android:text="@string/title_tracks" />
 
-        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        <ListView
             android:layout_below="@id/tracks_title"
-            android:layout_marginStart="-16dp"
             android:id="@+id/tracks_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="@dimen/activity_margins" />
+            android:padding="-16dp" />
 
     </RelativeLayout>
 

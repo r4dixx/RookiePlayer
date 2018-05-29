@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context="com.r4dixx.rookieplayer.AlbumsActivity">
+    tools:context="com.r4dixx.rookieplayer.TracksActivity">
 
-    <FrameLayout
+    <RelativeLayout
+        android:layout_margin="@dimen/activity_margins"
         android:id="@+id/albums_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -17,9 +18,21 @@
         <TextView
             android:id="@+id/albums_title"
             style="@style/TitleTheme"
+            android:layout_height="wrap_content"
             android:text="@string/title_albums" />
 
-    </FrameLayout>
+        <GridView
+            android:id="@+id/albums_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/activity_margins"
+            android:horizontalSpacing="@dimen/activity_margins"
+            android:gravity="center"
+            android:layout_below="@id/albums_title"
+            android:padding="@dimen/activity_margins" />
+
+    </RelativeLayout>
 
     <include
         layout="@layout/element_bottom_navigation"

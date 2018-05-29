@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class TracksActivity extends BaseActivity {
 
