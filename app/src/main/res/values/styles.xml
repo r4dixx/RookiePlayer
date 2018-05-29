@@ -17,6 +17,8 @@
         <item name="android:textSize">@dimen/title_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:paddingEnd">@dimen/activity_margins</item>
+        <item name="android:paddingBottom">@dimen/activity_margins</item>
         <item name="android:paddingStart">@dimen/activity_margins</item>
 
     </style>
