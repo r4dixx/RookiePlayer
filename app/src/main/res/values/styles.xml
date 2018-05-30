@@ -2,7 +2,6 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="android:windowBackground">@drawable/rounded_corners</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -11,15 +10,109 @@
         <item name="android:textColor">@color/colorAccent</item>
     </style>
 
-    <style name="TitleTheme">
+    <!-- Page layouts theme. -->
+    <style name="PageLayoutTheme">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">@dimen/activity_margins</item>
+        <item name="android:layout_marginEnd">@dimen/activity_margins</item>
+        <item name="android:layout_marginStart">@dimen/activity_margins</item>
+    </style>
+
+    <!-- Page titles theme. -->
+    <style name="PageTitleTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/activity_margins</item>
         <item name="android:textSize">@dimen/title_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:paddingEnd">@dimen/activity_margins</item>
-        <item name="android:paddingBottom">@dimen/activity_margins</item>
-        <item name="android:paddingStart">@dimen/activity_margins</item>
-
     </style>
+
+    <!-- Album art in tracks page theme -->
+    <style name="TracksAlbumArtTheme">
+        <item name="android:layout_width">@dimen/list_album_art_size</item>
+        <item name="android:layout_height">@dimen/list_album_art_size</item>
+        <item name="android:layout_marginEnd">@dimen/activity_margins</item>
+        <item name="android:layout_marginBottom">@dimen/activity_margins</item>
+    </style>
+
+    <!-- Track name in tracks page theme -->
+    <style name="TracksTrackNameTheme">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Artist name in tracks page theme -->
+    <style name="TracksArtistNameTheme">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/colorDimmed</item>
+    </style>
+
+    <!-- Artist art in Artists page theme -->
+    <style name="ArtistsArtistArtTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/grid_album_art_height</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Artist name in Artists page theme -->
+    <style name="ArtistsArtistNameTheme">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:padding">@dimen/caption_padding</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Album art in Albums page theme -->
+    <style name="AlbumsAlbumArtTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/grid_album_art_height</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Album name in Albums page theme -->
+    <style name="AlbumsAlbumNameTheme">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:paddingEnd">@dimen/caption_padding</item>
+        <item name="android:paddingStart">@dimen/caption_padding</item>
+        <item name="android:paddingTop">@dimen/caption_padding</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Artist name in Albums page theme -->
+    <style name="AlbumsArtistNameTheme">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:paddingBottom">@dimen/caption_padding</item>
+        <item name="android:paddingEnd">@dimen/caption_padding</item>
+        <item name="android:paddingStart">@dimen/caption_padding</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+
+    <!-- ListView theme. -->
+    <style name="ListViewTheme">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">@dimen/elevation</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!-- GridView theme. -->
+    <style name="GridViewTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:horizontalSpacing">@dimen/activity_margins</item>
+        <item name="android:numColumns">2</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:verticalSpacing">@dimen/activity_margins</item>
+    </style>
+
+    <!-- Bottom Navigation bar theme. -->
+    <style name="BottomNavigationTheme">
+        <item name="android:paddingTop">@dimen/caption_padding</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
 </resources>

@@ -16,7 +16,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
 
         super.onCreate(savedInstanceState);
         setContentView(getContentViewId());
-        navigationView = findViewById(R.id.navigation);
+        navigationView = findViewById(R.id.bottom_navigation);
         navigationView.setOnNavigationItemSelectedListener(this);
     }
 

@@ -2,36 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/artists_container"
+    style="@style/PageLayoutTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context="com.r4dixx.rookieplayer.ArtistsActivity">
+    tools:context=".ArtistsActivity">
 
     <RelativeLayout
         android:id="@+id/artists_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="@dimen/activity_margins"
         android:layout_weight="1">
 
         <TextView
             android:id="@+id/artists_title"
-            style="@style/TitleTheme"
-            android:layout_height="wrap_content"
+            style="@style/PageTitleTheme"
             android:text="@string/title_artists" />
 
         <GridView
             android:id="@+id/artists_grid"
+            style="@style/GridViewTheme"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/artists_title"
-            android:gravity="center"
-            android:horizontalSpacing="@dimen/activity_margins"
-            android:numColumns="2"
-            android:padding="@dimen/activity_margins"
-            android:scrollbars="none"
-            android:verticalSpacing="@dimen/activity_margins" />
+            android:layout_below="@id/artists_title" />
 
     </RelativeLayout>
 

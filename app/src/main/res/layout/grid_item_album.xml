@@ -3,40 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".AlbumsActivity">
 
     <ImageView
         android:id="@+id/albums_album_art"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/album_art_gojira_magma" />
+        style="@style/AlbumsAlbumArtTheme"
+        tools:src="@drawable/album_art_gojira_magma" />
 
     <TextView
         android:id="@+id/albums_album_name"
+        style="@style/AlbumsAlbumNameTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/albums_artist_name"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorPrimary"
-        android:paddingEnd="8dp"
-        android:paddingStart="8dp"
-        android:paddingTop="8dp"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:textStyle="bold"
         tools:text="Magma" />
 
     <TextView
         android:id="@+id/albums_artist_name"
+        style="@style/AlbumsArtistNameTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/albums_album_art"
-        android:paddingBottom="8dp"
-        android:paddingEnd="8dp"
-        android:paddingStart="8dp"
-        android:background="@color/colorAccent"
-        android:text="Gojira"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/darker_gray" />
+        tools:text="Gojira" />
 
 </RelativeLayout>

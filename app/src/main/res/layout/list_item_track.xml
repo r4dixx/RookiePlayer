@@ -3,33 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:padding="16dp">
+    android:orientation="horizontal">
 
     <ImageView
         android:id="@+id/tracks_album_art"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="16dp"
+        style="@style/TracksAlbumArtTheme"
         android:src="@drawable/album_art_gojira_magma" />
 
     <TextView
         android:id="@+id/tracks_track_title"
-        android:textStyle="bold"
+        style="@style/TracksTrackNameTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/tracks_album_art"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
         tools:text="The Shooting Star" />
 
     <TextView
         android:id="@+id/tracks_artist_name"
+        style="@style/TracksArtistNameTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tracks_track_title"
         android:layout_toEndOf="@id/tracks_album_art"
-        android:text="Gojira"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/darker_gray" />
-
+        tools:text="Gojira" />
 </RelativeLayout>

@@ -2,35 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tracks_container"
+    style="@style/PageLayoutTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context="com.r4dixx.rookieplayer.TracksActivity">
+    tools:context=".TracksActivity">
 
     <RelativeLayout
         android:id="@+id/tracks_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="@dimen/activity_margins"
         android:layout_weight="1">
 
         <TextView
             android:id="@+id/tracks_title"
-            style="@style/TitleTheme"
-            android:layout_height="wrap_content"
+            style="@style/PageTitleTheme"
             android:text="@string/title_tracks" />
 
         <ListView
             android:id="@+id/tracks_list"
+            style="@style/ListViewTheme"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/tracks_title"
-            android:orientation="vertical"
-            android:dividerHeight="0dp"
-            android:divider="@null"
-            android:padding="-16dp"
-            android:scrollbars="none" />
+            android:orientation="vertical" />
 
     </RelativeLayout>
 
