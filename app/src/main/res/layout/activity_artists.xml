@@ -30,6 +30,7 @@
             android:horizontalSpacing="@dimen/activity_margins"
             android:numColumns="2"
             android:padding="@dimen/activity_margins"
+            android:scrollbars="none"
             android:verticalSpacing="@dimen/activity_margins" />
 
     </RelativeLayout>

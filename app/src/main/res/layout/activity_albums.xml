@@ -9,10 +9,10 @@
     tools:context="com.r4dixx.rookieplayer.AlbumsActivity">
 
     <RelativeLayout
-        android:layout_margin="@dimen/activity_margins"
         android:id="@+id/albums_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_margin="@dimen/activity_margins"
         android:layout_weight="1">
 
         <TextView
@@ -25,12 +25,13 @@
             android:id="@+id/albums_grid"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:numColumns="2"
-            android:verticalSpacing="@dimen/activity_margins"
-            android:horizontalSpacing="@dimen/activity_margins"
-            android:gravity="center"
             android:layout_below="@id/albums_title"
-            android:padding="@dimen/activity_margins" />
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/activity_margins"
+            android:numColumns="2"
+            android:padding="@dimen/activity_margins"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/activity_margins" />
 
     </RelativeLayout>
 
