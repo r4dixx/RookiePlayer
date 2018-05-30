@@ -49,7 +49,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
 
         },
                 // to give enough time for the ripple effect to happen
-                300);
+                100);
         return true;
     }
 
