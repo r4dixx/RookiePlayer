@@ -24,7 +24,7 @@ public class TrackAdapter extends ArrayAdapter<Track> {
      * @param tracks   is a list of Track objects to display in the list
      */
     public TrackAdapter(Activity context, ArrayList<Track> tracks) {
-        // We initialize the ArrayAdapter for the context and the Tracks list
+        // We initialize the ArrayAdapter for the context and the Track list
         // We're using 0 as second type argument because the adapter is not going to use it (it can be of any value)
         super(context, 0, tracks);
     }
@@ -48,7 +48,7 @@ public class TrackAdapter extends ArrayAdapter<Track> {
         //Get the {@link Track} object located at this position in the list
         Track currentTrack = getItem(position);
 
-        // Find the TextView in the list_item_track.xmlck.xml layout. Then set the given text on the appropriate TextView
+        // Find the TextView in the list_item_track.xml layout. Then set the given texts on the appropriate TextViews and the given image on the appropriate ImageView
         TextView trackTextView = listItemView.findViewById(R.id.tracks_track_title);
         trackTextView.setText(currentTrack.getTrackTitle());
         TextView artistTextView = listItemView.findViewById(R.id.tracks_artist_name);
@@ -56,7 +56,7 @@ public class TrackAdapter extends ArrayAdapter<Track> {
         ImageView albumImageView = listItemView.findViewById(R.id.tracks_album_art);
         albumImageView.setImageResource(currentTrack.getAlbumArt());
 
-        // Return the whole list item layout (containing 1 TextView so it can be shown in the ListView)
+        // Return the whole list item layout (containing 2 TextViews and 1 ImageView so they can be shown in the ListView)
         return listItemView;
     }
 }
