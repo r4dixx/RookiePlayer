@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/artists_artist_art"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/artist_art_gojira" />
+
+    <TextView
+        android:id="@+id/artists_artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/albums_artist_name"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:layout_alignBottom="@id/artists_artist_art"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        tools:text="Gojira" />
+
+</RelativeLayout>
