@@ -111,7 +111,7 @@
 
     <!-- Bottom Navigation bar theme. -->
     <style name="BottomNavigationTheme">
-        <item name="android:paddingTop">@dimen/caption_padding</item>
+        <item name="android:paddingTop">@dimen/activity_margins</item>
         <item name="android:background">@color/colorPrimary</item>
     </style>
 
