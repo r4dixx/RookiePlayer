@@ -14,8 +14,8 @@
     <style name="PageLayoutTheme">
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:layout_marginTop">@dimen/activity_margins</item>
-        <item name="android:layout_marginEnd">@dimen/activity_margins</item>
-        <item name="android:layout_marginStart">@dimen/activity_margins</item>
+        <item name="android:layout_marginRight">@dimen/activity_margins</item>
+        <item name="android:layout_marginLeft">@dimen/activity_margins</item>
     </style>
 
     <!-- Page titles theme. -->
@@ -32,7 +32,7 @@
     <style name="TracksAlbumArtTheme">
         <item name="android:layout_width">@dimen/list_album_art_size</item>
         <item name="android:layout_height">@dimen/list_album_art_size</item>
-        <item name="android:layout_marginEnd">@dimen/activity_margins</item>
+        <item name="android:layout_marginRight">@dimen/activity_margins</item>
         <item name="android:layout_marginBottom">@dimen/activity_margins</item>
     </style>
 
@@ -74,8 +74,8 @@
     <!-- Album name in Albums page theme -->
     <style name="AlbumsAlbumNameTheme">
         <item name="android:background">@color/colorAccent</item>
-        <item name="android:paddingEnd">@dimen/caption_padding</item>
-        <item name="android:paddingStart">@dimen/caption_padding</item>
+        <item name="android:paddingLeft">@dimen/caption_padding</item>
+        <item name="android:paddingRight">@dimen/caption_padding</item>
         <item name="android:paddingTop">@dimen/caption_padding</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
         <item name="android:textColor">@color/colorPrimary</item>
@@ -86,8 +86,8 @@
     <style name="AlbumsArtistNameTheme">
         <item name="android:background">@color/colorAccent</item>
         <item name="android:paddingBottom">@dimen/caption_padding</item>
-        <item name="android:paddingEnd">@dimen/caption_padding</item>
-        <item name="android:paddingStart">@dimen/caption_padding</item>
+        <item name="android:paddingLeft">@dimen/caption_padding</item>
+        <item name="android:paddingRight">@dimen/caption_padding</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
         <item name="android:textColor">@android:color/darker_gray</item>
     </style>

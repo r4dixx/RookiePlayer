@@ -15,6 +15,7 @@
         style="@style/TracksTrackNameTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tracks_album_art"
         android:layout_toEndOf="@id/tracks_album_art"
         tools:text="The Shooting Star" />
 
@@ -24,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tracks_track_title"
+        android:layout_toRightOf="@id/tracks_album_art"
         android:layout_toEndOf="@id/tracks_album_art"
         tools:text="Gojira" />
 </RelativeLayout>
