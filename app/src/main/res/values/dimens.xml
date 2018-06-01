@@ -3,7 +3,7 @@
     <dimen name="activity_margins">16dp</dimen>
     <dimen name="title_size">34sp</dimen>
     <dimen name="elevation">0dp</dimen>
-    <dimen name="list_album_art_size">56dp</dimen>
+    <dimen name="list_album_art_size">50dp</dimen>
     <dimen name="grid_album_art_height">200dp</dimen>
     <dimen name="caption_padding">8dp</dimen>
 </resources>
