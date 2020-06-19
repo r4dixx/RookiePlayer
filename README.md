@@ -49,10 +49,10 @@ Or use <a href="https://github.com/cesarferreira/dryrun" target="_blank">`dryrun
 
 <h2>Contributing</h2>
 
-This project is open to code improvements.
+No contributions can be made. Project from another time now put in the archive void.
 
 <h2>Project status</h2>
-Open to code improvements only. Closed for anything else.
+Closed
 
 <h2>Credits</h2>
 
